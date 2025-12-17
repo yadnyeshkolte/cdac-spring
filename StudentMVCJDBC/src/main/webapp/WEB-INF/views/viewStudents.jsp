@@ -23,4 +23,4 @@
 </table>
 
 <br>
-<a href="register">Add New Student</a>
+<a href="registerStudent">Add New Student</a>
