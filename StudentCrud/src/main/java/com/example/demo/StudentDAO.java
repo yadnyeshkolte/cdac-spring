@@ -8,12 +8,12 @@ public class StudentDAO {
 	private final JdbcTemplate jdbcTemplate;
 	
 	public StudentDAO (JdbcTemplate jdbcTemplate) {
-		this.jdbcTemplate = new JdbcTemplate();
+		this.jdbcTemplate = jdbcTemplate;
 	}
 	
 	public void save(Student student) {
-		String sql = "insert into students values(?,?,?,?)";
-		jdbcTemplate.update(sql, student.getName(), student.getCourse(), student.getEmail(), student.getPassword());
+		String sql = "insert into students values(?,?,?,?,?)";
+		jdbcTemplate.update(sql, student.getSid(), student.getName(), student.getCourse(), student.getEmail(), student.getPassword());
 	}
 
 	
