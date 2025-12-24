@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Student Info </title>
+</head>
+<body>
+
+<h2 id="title"></h2>
+<p><strong>ID:</strong> <span id="id"></span></p>
+<p><strong>Name:</strong> <span id="name"></span></p>
+<p><strong>Email:</strong> <span id="email"></span></p>
+<p><strong>Gender:</strong> <span id="gender"></span></p>
+<p><strong>Course:</strong> <span id="course"></span></p>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+
+    document.getElementById("title").innerText = "Hello " + params.get("Std_Name");
+    document.getElementById("id").innerText = params.get("Std_ID");
+    document.getElementById("name").innerText = params.get("Std_Name");
+    document.getElementById("uemail").innerText = params.get("emailId");
+    document.getElementById("gender").innerText = params.get("Gender");
+    document.getElementById("course").innerText = params.get("Course");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Page</title>
+</head>
+<body>
+
+<h2>Student Info</h2>
+
+<form action="StudentInfo" method="post">
+    
+    <label>Std_ID:</label><br>
+    <input type="number" name="Std_ID" required><br><br>
+
+    <label>Std_Name:</label><br>
+    <input type="text" name="Std_Name" required><br><br>
+    
+    <label>Email:</label><br>
+    <input type="text" name="emailId" required><br><br>
+    
+    <label>Gender:</label><br>
+    <input type="radio" name="Gender" value="Male"> Male
+    <input type="radio" name="Gender" value="Female"> Female<br><br>
+    
+    <label>Course:</label><br>
+    <select name="Course" required>
+        <option value="DAC">DAC</option>
+        <option value="DBDA">DBDA</option>
+        <option value="DITISS">DITISS</option>
+    </select><br><br>
+
+    <button type="submit">Register</button>
+
+</form>
+
+</body>
+</html>
