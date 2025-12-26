@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import com.example.demo.Course;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
